@@ -1,0 +1,8 @@
+<%= form_for @task, class: 'form-inline' do |f|%>
+  <%= f.label :title, "your task" %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :description, "add description" %>
+  <%= f.text_field :description, class: 'form-control' %>
+  <%= f.submit %>
+  <%= link_to "go home", tasks_path %>
+<% end %>
